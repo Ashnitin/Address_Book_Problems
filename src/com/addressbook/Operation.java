@@ -2,7 +2,7 @@ package com.addressbook;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Operation {
-    //ArrayList<Contact> al=new ArrayList<>();
+    ArrayList<Contact> al=new ArrayList<>();
     public void input(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter First Name: ");
@@ -23,6 +23,6 @@ public class Operation {
         String email=sc.next();
         Contact ob=new Contact(firstName,lastName,address,city, state,email,zip,phoneNo);
         System.out.println(ob);
-       // al.add(ob);
+        al.add(ob);
     }
 }
